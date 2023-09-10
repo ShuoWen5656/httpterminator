@@ -1,4 +1,4 @@
-package top.swzhao.project.httpterminatorcore;
+package top.swzhao.project.httpterminator.core;
 
 /**
  * @author swzhao

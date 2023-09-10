@@ -1,4 +1,4 @@
-package top.swzhao.project.httpterminatorcore.annotation;
+package top.swzhao.project.httpterminator.core.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,18 +7,19 @@ import java.lang.annotation.Target;
 
 /**
  * @author swzhao
- * @data 2023/7/8 18:48
- * @Discreption <> 默认请求头key X-Auth-Token 自动填装
+ * @data 2023/7/8 13:24
+ * @Discreption <>
  */
 @Target(ElementType.PARAMETER)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Token {
+public @interface FormedParameter {
 
 
     /**
-     * 请求头token的key值
+     * 表单变量名称（必填）
      * @return
      */
-    String name() default "X-Auth-Token";
+    String name();
+
 
 }

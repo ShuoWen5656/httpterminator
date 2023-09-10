@@ -1,4 +1,4 @@
-package top.swzhao.project.httpterminatorcore.annotation;
+package top.swzhao.project.httpterminator.core.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

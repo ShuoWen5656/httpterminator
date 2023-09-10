@@ -1,4 +1,4 @@
-package top.swzhao.project.httpterminatorcore.annotation;
+package top.swzhao.project.httpterminator.core.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,18 +7,10 @@ import java.lang.annotation.Target;
 
 /**
  * @author swzhao
- * @data 2023/7/8 17:21
+ * @data 2023/7/8 18:44
  * @Discreption <>
  */
-@Target(ElementType.TYPE)
+@Target(ElementType.PARAMETER)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface HttpTerminator {
-
-    /**
-     * 注入bean名称自定义
-     * @return
-     */
-    String name() default "";
-
-
+public @interface PathValues {
 }

@@ -1,4 +1,4 @@
-package top.swzhao.project.httpterminatorcore.constants;
+package top.swzhao.project.httpterminator.core.constants;
 
 import org.apache.http.entity.ContentType;
 

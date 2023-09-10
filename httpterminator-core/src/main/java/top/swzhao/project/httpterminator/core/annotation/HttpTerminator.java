@@ -1,4 +1,4 @@
-package top.swzhao.project.httpterminatorcore.annotation;
+package top.swzhao.project.httpterminator.core.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,19 +7,18 @@ import java.lang.annotation.Target;
 
 /**
  * @author swzhao
- * @data 2023/7/8 18:51
- * @Discreption <> 请求中 http://...?parma1=xxx&param2=xxx
+ * @data 2023/7/8 17:21
+ * @Discreption <>
  */
-@Target(ElementType.PARAMETER)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface UrlParam {
+public @interface HttpTerminator {
 
     /**
-     * urlparamkey(必填)
+     * 注入bean名称自定义
      * @return
      */
-    String name();
+    String name() default "";
 
 
 }
-
